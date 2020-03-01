@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>valentergs.dev</title>
+    <title>valente.dev</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap"
       rel="stylesheet"
@@ -11,13 +11,15 @@
       src="https://kit.fontawesome.com/42ce8b9e03.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../public/styles.css" />
   </head>
   <body>
-    <nav>
+    <div>
       <h1 class="logo">
-        <a href="#">valentergs.dev</a>
+        <a href="https://www.valente.dev/">valente.dev</a>
       </h1>
+    </div>
+    <nav>
       <div class="tools">
         <a target="_blank" href="https://go.dev/">Go</a> |
         <a target="_blank" href="https://www.postgresql.org/">Postgres</a> |
@@ -78,9 +80,10 @@
 
   <footer>
     <script type="text/javascript">
-      current_date = new Date();
-      cyear = current_date.getFullYear();
-      document.write("valentergs &copy " + cyear);
+      agora = new Date();
+      ano = agora.getFullYear();
+
+      document.write("valentergs &copy " + agora);
     </script>
   </footer>
 </html>
