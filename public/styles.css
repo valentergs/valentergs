@@ -23,8 +23,8 @@ nav {
 }
 
 /* Logo */
-.logo {
-  margin-top: 0;
+.logo a {
+  font-size: 1.8rem;
 }
 
 /* nav-itens */
