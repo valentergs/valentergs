@@ -1,7 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Noto Sans;
-  font-size: 1rem;
-  padding: 1rem;
+  font-family: "Noto Sans";
+}
+
+/* Navbar */
+
+nav {
+  background-color: #24252a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 10%;
+  color: #edf0f1;
+}
+
+/* Logo */
+.logo {
+  margin-top: 0;
+}
+
+/* nav-itens */
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
 a {
@@ -13,26 +47,42 @@ a:hover {
   text-decoration: underline;
 }
 
-.logo {
-  margin-top: 0;
-}
+/* icons */
 
 #fontawesome {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
-.mainTitle {
-  margin: 0px;
+.github {
+  padding: 5px;
 }
 
-.item-title {
-  padding: 20px 0 0 0;
-  margin: 0px;
+/* Program Logos */
+
+.programs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
 }
 
-.item-text {
-  margin: 0px;
+/* Main Section */
+
+.main-section {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 4fr;
+  padding: 0 20px;
+  height: 200px;
 }
+
+.pane {
+  background-color: #efefef;
+  padding: 10px;
+}
+
+/* Footer */
 
 footer {
   position: absolute;
@@ -43,4 +93,11 @@ footer {
   padding: 0.8rem;
   background-color: #efefef;
   text-align: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem; /* Footer height */
 }

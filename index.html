@@ -3,40 +3,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>valente.dev</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Merriweather|Noto+Sans&display=swap"
-      rel="stylesheet"
-    />
     <script
       src="https://kit.fontawesome.com/42ce8b9e03.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../public/styles.css" />
   </head>
+
   <body>
-    <div>
-      <h1 class="logo">
-        <a href="https://www.valente.dev/">valente.dev</a>
-      </h1>
-    </div>
+    <!-- Navbar -->
+
     <nav>
-      <div class="tools">
-        <a target="_blank" href="https://go.dev/">Go</a> |
-        <a target="_blank" href="https://www.postgresql.org/">Postgres</a> |
-        <a target="_blank" href="https://reactjs.org/">React</a> |
-        <a target="_blank" href="https://www.docker.com/products/docker-hub"
-          >Docker</a
-        >
-        |
-        <a target="_blank" href="https://kubernetes.io/">Kubernetes</a>
+      <!-- Logo -->
+      <div>
+        <h1 class="logo">
+          <a href="https://valente.dev/">valente.dev</a>
+        </h1>
       </div>
+      <!-- nav-items -->
+      <ul class="nav-items">
+        <a href="#">Projetos</a>
+        |
+        <a href="#">Blog</a>
+        |
+        <a href="#">Sages</a>
+      </ul>
+
+      <!-- Icons -->
+
       <div class="icons">
         <a class="github" target="_blank" href="https://github.com/valentergs"
           ><i id="fontawesome" class="fab fa-github-square"></i
-        ></a>
-
-        <a class="github" target="_blank" href="#"
-          ><i id="fontawesome" class="fab fa-youtube-square"></i
         ></a>
 
         <a class="github" target="_blank" href="https://twitter.com/valentergs"
@@ -44,7 +41,7 @@
         ></a>
 
         <a
-          class="email"
+          class="github"
           href="mailto:valentergs@gmail.com"
           target="_top"
           alt="mailto:valentergs@gmail.com"
@@ -54,36 +51,53 @@
       </div>
     </nav>
 
-    <div class="container-item">
-      <h3 class="item-title">
-        <a href="#">/Books API</a>
-      </h3>
-      <p class="item-text">
-        API desenvolvido em Go e Postgres. Deploy com Docker e Kubernetes. App
-        de rede social que conecta proprietários de livros que querem
-        compartilhar seus livros com outras pessoas. É possivel conhecer o
-        perfil das pessoas baseado em sua biblioteca.
-      </p>
-    </div>
+    <!-- Program Logos -->
 
-    <div class="container-item">
-      <a href="#">
-        <h3 class="item-title">
-          <a href="#">/CRM </a>
-        </h3>
-      </a>
-      <p class="item-text">
-        API desenvolvido em Go e Postgres. Deploy com Docker e Kubernetes.
-      </p>
-    </div>
+    <section>
+      <ul class="programs">
+        <li class="prog-logos">
+          <a target="_blank" href="https://go.dev/">
+            <img src="./public/logos/golang-ar21.svg" alt="" />
+          </a>
+        </li>
+        <li class="prog-logos">
+          <a target="_blank" href="https://www.postgresql.org/">
+            <img src="./public/logos/postgresql-ar21.svg" alt="" />
+          </a>
+        </li>
+        <li class="prog-logos">
+          <a target="_blank" href="https://reactjs.org/">
+            <img src="./public/logos/reactjs-ar21.svg" alt="" />
+          </a>
+        </li>
+        <li class="prog-logos">
+          <a target="_blank" href="https://www.docker.com/products/docker-hub">
+            <img src="./public/logos/docker-ar21.svg" alt="" />
+          </a>
+        </li>
+        <li class="prog-logos">
+          <a target="_blank" href="https://kubernetes.io/">
+            <img src="./public/logos/kubernetes-ar21.svg" alt="" />
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Main Section -->
+
+    <section class="main-section">
+      <div class="sidebar pane">Sidebar</div>
+      <div class="right-pane pane">Main Pane</div>
+    </section>
+
+    <!-- Footer -->
+
+    <!-- <footer id="footer">
+      <script type="text/javascript">
+        agora = new Date();
+        ano = agora.getFullYear();
+        document.write("&copy " + ano + " valente.dev");
+      </script>
+    </footer> -->
   </body>
-
-  <footer>
-    <script type="text/javascript">
-      agora = new Date();
-      ano = agora.getFullYear();
-
-      document.write("valentergs &copy " + agora);
-    </script>
-  </footer>
 </html>
